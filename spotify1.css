@@ -1,0 +1,586 @@
+body{
+    background-color: black;
+}
+.spotify{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 16% 64% 20%;
+    grid-template-areas: "left center right";
+}
+.left{
+    background-color:black;
+    height: 643px;
+    grid-area: left;
+}
+.center{
+    background-color: rgb(31, 29, 29);
+    max-height: 643px;
+    overflow: auto;
+
+    grid-area: center;
+}
+.right{
+    background-color: rgb(49, 47, 47);
+    height:643px;
+    grid-area: right;
+}
+.dropdown{
+    font-size: 10px;
+    color:white;
+    background-color: black;
+    font-size: 20px;
+    padding: 5px 5px;
+    border: black none;
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.dropdown:focus,
+.dropdown:hover{
+    outline: none;
+}
+.home{
+    font-size: 17px;
+    color: white;
+    font-family: monserrat;
+    border-right: 10px;
+    padding: 0px 10px;
+    opacity: 0.5;
+    background-color: rgb(75, 74, 74);
+    border-radius: 20px ;
+    margin-right: 5px;
+}
+.iconhome{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.home:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 40px;
+
+}
+.search{
+    font-size: 17px;
+    color: white;
+    font-family: monserrat;
+    border-right: 10px;
+    padding: 0px 10px;
+    opacity: 0.5;
+
+}
+.iconsearch{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.search:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+.library{
+    font-size: 17px;
+    color: white;
+    font-family: monserrat;
+    border-right: 10px;
+    padding: 0px 10px;
+    opacity: 0.5;
+
+}
+.iconlibrary{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.library:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+.playlist{
+    font-size: 17px;
+    color: white;
+    font-family: monserrat;
+    border-right: 10px;
+    padding: 0px 10px;
+    opacity: 0.5;
+    margin-top: 50px;
+
+}
+.iconplaylist{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.playlist:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+.liked{
+    font-size: 17px;
+    color: white;
+    font-family: monserrat;
+    border-right: 10px;
+    padding: 0px 10px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    margin-bottom:  1px solid grey;
+    border-bottom:grey solid 2px;
+
+}
+.iconliked{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.liked:hover{
+    cursor: pointer;
+    background-color: grey;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+/*center*/
+
+.leftarrow{
+    font-size: 30px;
+    padding-left: 10px;
+
+}
+.rightarrow{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.leftarrow:hover{
+    cursor: pointer;
+}
+.rightarrow{
+    cursor:pointer;
+}
+.upgrade{
+    border-radius: 20px;
+    background-color: black;
+    border:white solid 1px;
+    color: white;
+    padding:10px 35px;
+    margin-top: 10px;
+    margin-left: 400px;
+    font-size: 15px ;
+    font-weight: bold;
+}
+.upgrade:hover{
+    cursor:pointer;
+    background-color: rgb(51, 47, 47);
+}
+.user{
+    font-size: 13px;
+    border:black  1px;
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    padding:5px 10px;
+    margin-top: 10px;
+    margin-left: 90px;
+    font-weight: bolder;
+}
+.iconuser{
+    font-size: 20px;
+    margin-right:15px ;
+    margin-left:0px;
+}
+.text{
+    padding-bottom: 50px;
+}
+.user:hover{
+    background-color:  rgb(51, 47, 47);
+    cursor:pointer;
+}
+.sound{
+    padding-left: 40px;
+    color:white;
+    font-size: 25px;
+    font-family:'Otomanopee One', sans-serif;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+.sound>span:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.seeall{
+    color: white;
+    font-size: 18px;
+    padding-left: 750px;
+    margin-top: 0px;
+}
+.seeallarrow{
+    color:white;
+    font-size: 15px;
+    padding-left: 7px;
+}
+.seeall>span:hover{
+    cursor:pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.box{
+    background-color: rgb(36, 34, 34);
+    display:flex;
+    flex-direction:row;
+    display:inline-flex; 
+    margin-left: 10px; ;
+    width: 70px;
+    height:250px;
+    border: none 1px solid;
+    padding:0px 60px;
+    margin-top: 0px;
+}
+.box13{
+    background-image: url("../images/ed\ sheeran.jpg");
+    background-color: black;
+    box-shadow: black 5px 5px 18px;
+    background-size:cover;
+    position: relative;
+    left:16px;
+    bottom:400px;
+    width:33px;
+    height:150px;
+    bottom:230px;
+    background-position:center ;
+}
+.box1>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box14{
+    background-image: url("../images/ed\ sheeran.jpg");
+    background-color: black;
+    box-shadow: black 5px 5px 18px;
+    background-size:cover;
+    position: relative;
+    left:56px;
+    bottom:300px;
+    width:33px;
+    height:150px;
+    bottom:230px;
+    background-position:center ;
+
+}
+.box2>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box3>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box4>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box15{
+    background-image: url("../images/ed\ sheeran.jpg");
+    background-color: black;
+    box-shadow: black 5px 5px 18px;
+    background-size:cover;
+    position: relative;
+    left:93px;
+    bottom:300px;
+    width:33px;
+    height:150px;
+    bottom:230px;
+    background-position:center ;
+}
+.box16{
+    background-image: url("../images/ed\ sheeran.jpg");
+    background-color: black;
+    box-shadow: black 5px 5px 18px;
+    background-size:cover;
+    position: relative;
+    left:131px;
+    bottom:300px;
+    width:33px;
+    height:150px;
+    bottom:230px;
+    background-position:center ;
+}
+.box>span>img{
+    width:100px;
+    height:100px;
+    padding-right:20px;
+}
+.yuvan{
+    padding-left: 40px;
+    color:white;
+    font-size: 25px;
+    font-family:'Otomanopee One', sans-serif;
+}
+.yuvan>span:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.box17{
+    background-image: url("../images/yuvan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:20px;
+}
+.box18{
+    background-image: url("../images/yuvan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:55px;
+}
+.box19{
+    background-image: url("../images/yuvan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:95px;
+}
+.box20{
+    background-image: url("../images/yuvan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:130px;
+}
+.box5>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box6>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box7>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box8>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+/*center harrish*/
+.harrish{
+    padding-left: 40px;
+    color:white;
+    font-size: 25px;
+    font-family:'Otomanopee One', sans-serif;;
+}
+.harrish>span:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.box21{
+    background-image: url("../images/harrish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:20px;
+}
+.box22{
+    background-image: url("../images/harrish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:55px;
+}
+.box23{
+    background-image: url("../images/harrish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:95px;
+}
+.box24{
+    background-image: url("../images/harrish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 8px 8px 10px;
+    position:relative;
+    width:33px;
+    height:150px;
+    background-color: black;
+    bottom:230px;
+    left:130px;
+}
+.box9>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box10>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box11>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+.box12>span{
+    color:white;
+    font-size:20px;
+    font-weight: 1000;
+    padding-top:180px;
+    text-align: center;
+    text-shadow: black 7px 7px 12px;
+    width:auto;
+    height:auto;
+}
+
+
+
+/* right side*/
+.friend{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left:20px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+.connect{
+    color:rgb(179, 172, 172);
+    padding-left: 20px;
+    font-weight: bolder;
+
+}
+.facebook{
+    padding:10px 10px;
+    background-color: rgb(98, 143, 241);
+    border-radius: 20px;
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+    border:black;
+    font-size: 15px;
+    font-weight:bold;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+}
+.iconfacebook{
+    color:white;
+    padding-right: 8px;
+    font-size:17px;
+}
+.facebook:hover{
+    cursor:pointer;
+    padding: 12px 12px;
+}
+.we{
+    color:rgb(179, 172, 172);
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: bold;
+    margin-top: 90px;
+    position: absolute;
+}
